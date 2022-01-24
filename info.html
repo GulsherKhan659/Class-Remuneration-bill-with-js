@@ -1,0 +1,757 @@
+<html class="no-js" lang="en">
+
+<head>
+    <title></title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    </link>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        body {
+            background: #EECDA3;
+            background: -webkit-linear-gradient(to top, #1b5210, #EECDA3);
+            background: linear-gradient(to top, #464d45, #EECDA3);
+        }
+
+        .container {
+            max-width: 850px;
+        }
+
+        .has-error label,
+        .has-error input,
+        .has-error textarea {
+            color: red;
+            border-color: red;
+        }
+
+        .list-unstyled li {
+            font-size: 13px;
+            padding: 4px 0 0;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">University Of Sindh</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Download Flies</a>
+                </li>
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="card">
+            <h5 class="card-header text-center">SALARY SYSTEM</h5>
+            <div class="card-body">
+                <form role="form" action="/check.html" data-toggle="validator">
+
+                    <div class="row">
+
+                        <div class="form-group col-12">
+                            <label>Dates</label>
+                            <select name="" data-error="You must select an option." id="Selectdata"
+                                class="form-control">
+                                <option disabled selected value="-1">select an option</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group col-5 op1" style="display: none;">
+                            <label>Start Date</label>
+                            <input type="date" class="form-control" data-error="You must have a date." id="opt1startdate"
+                                placeholder="Name" required>
+
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-5 op1" style="display: none;">
+                            <label>End Date</label>
+                            <input type="date" class="form-control" data-error="You must have a date." id="opt1enddate"
+                                placeholder="Name" required>
+
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-2 op1" style="display: none;">
+                            <label>Select</label>
+                            <select name="" data-error="You must select an option." class="form-control" id="opt1class">
+                                <option disabled selected value="-1">option</option>
+                                <option value="Online">Online</option>
+                                <option  value="Physical">Offline</option>
+
+                            </select>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group col-5 op2" style="display: none;">
+                            <label>Start Date</label>
+                            <input type="date" class="form-control" data-error="You must have a date." id="opt2startdate"
+                                placeholder="Name" required>
+
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-5 op2" style="display: none;">
+                            <label>End Date</label>
+                            <input type="date" class="form-control" data-error="You must have a date." id="opt2enddate"
+                                placeholder="Name" required>
+
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-2 op2" style="display: none;">
+                            <label>Select</label>
+                            <select name="" data-error="You must select an option." class="form-control" id="opt2class">
+                                <option disabled selected value="-1">option</option>
+                                <option value="Online">Online</option>
+                                <option  value="Physical">Offline</option>
+
+                            </select>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group col-5 op3" style="display: none;">
+                            <label>Start Date</label>
+                            <input type="date" class="form-control" data-error="You must have a date." id="opt3startdate"
+                                placeholder="Name" required>
+
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-5 op3" style="display: none;">
+                            <label>End Date</label>
+                            <input type="date" class="form-control" data-error="You must have a date." id="opt3enddate"
+                                placeholder="Name" required>
+
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-2 op3" style="display: none;">
+                            <label>Select</label>
+                            <select name="" data-error="You must select an option." class="form-control" id="opt3class">
+                                <option disabled selected value="-1">option</option>
+                                <option value="Online">Online</option>
+                                <option  value="Physical">Offline</option>
+
+                            </select>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group col-6">
+                            <label>Faculty Member</label>
+                            <input type="text" class="form-control" data-error="You must have a name." id="facultymember"
+                                placeholder="Faculty Member" required>
+
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group col-6">
+                            <label>Designation</label>
+                            <input type="text" class="form-control" name="designation" maxlength="10" minlength="3"
+                                pattern="^[a-zA-Z0-9_.-]*$" id="designation" placeholder="Designation" required>
+
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-6">
+                            <label>Program</label>
+                            <select name="" data-error="You must select an option." class="form-control" id="program">
+                                <option disabled selected value="-1">option</option>
+                                <option value="Lab">Evening</option>
+                                <option  value="Theory">Morning</option>
+
+                            </select>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                       
+                        <div class="form-group col-6">
+                            <label>Semester</label>
+                            <input type="text" class="form-control" id="inputEmail" placeholder="Semester" required id="semester">
+
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+
+                        <div class="form-group col-6">
+                            <label>Teach./</label>
+                            <div class="form-group">
+                                <input type="text" data-minlength="4" class="form-control" id="teach"
+                                    placeholder="Teach./" required id=""/>
+
+                                <!-- Error -->
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <!--Form 1-->
+                        <div class="form-group col-6">
+                            <label>Class Time And Date</label>
+                            <select name="" data-error="You must select an option." id="classTimeAndDate0" onchange="show_time_date('classTimeAndDate0','opt10','opt20')"
+                                class="form-control">
+                                <option disabled selected value="-1">select an option</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                         
+                        <div class="form-group col-5 opt10" style="display: none;">
+                            <label>Start Time</label>
+                            <input type="time" class="form-control" data-error="You must have a date." id="starttime01"
+                                placeholder="Name" required>
+
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-5 opt10" style="display: none;">
+                            <label>End Time</label>
+                            <input type="time" class="form-control" data-error="You must have a date." id="endtime01"
+                                placeholder="Name" required>
+
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-2 opt10" style="display: none;">
+                            <label>Select</label>
+                            <select name="" data-error="You must select an option." class="form-control" id="dayselect01">
+                                <option disabled selected value="-1">option</option>
+                                <option value="monday">Monday</option>
+                                <option  value="tuesday">Tuesday</option>
+                                <option value="wednesday">Wednesday</option>
+                                <option  value="friday">Friday</option>
+                                <option value="thursday">Thursday</option>
+
+
+                            </select>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group col-5 opt20" style="display: none;">
+                            <label>Start Time</label>
+                            <input type="time" class="form-control" data-error="You must have a date." id="starttime02"
+                                placeholder="Name" required>
+
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-5 opt20" style="display: none;">
+                            <label>End Time</label>
+                            <input type="time" class="form-control" data-error="You must have a date." id="endtime02"
+                                placeholder="Name" required>
+
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-2 opt20" style="display: none;">
+                            <label>Select</label>
+                            <select name="" data-error="You must select an option." class="form-control" id="dayselect02">
+                                <option disabled selected value="-1">option</option>
+                                <option value="monday">Monday</option>
+                                <option  value="tuesday">Tuesday</option>
+                                <option value="wednesday">Wednesday</option>
+                                <option  value="friday">Friday</option>
+                                <option value="thursday">Thursday</option>
+
+                            </select>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-6">
+                            <label>Name of Incumbent</label>
+                            <input type="text" class="form-control" data-error="You must have a name." id="subject0"
+                                placeholder="Name of Incumbent" required>
+
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group col-6">
+                            <label>Group</label>
+                            <input type="text" class="form-control" name="designation" maxlength="10" minlength="3"
+                                pattern="^[a-zA-Z0-9_.-]*$" id="group0" placeholder="Group" required>
+
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group col-4">
+                            <label>Months</label>
+                            <div class="form-group" class="">
+                                <input type="month" class="form-control" id="date01" required />
+
+                                <!-- Error -->
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="form-group col-1 mr-4">
+                            <label>Dates</label>
+                            <input type="text" class="form-control date01" data-error="You must have a  date." id=" " 
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-1 mr-4">
+                            <label>Dates</label>
+                            <input type="text" class="form-control date01" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-1 mr-4">
+                            <label>Dates</label>
+                            <input type="text" class="form-control date01" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+                        <div class="form-group col-1 mr-4">
+                            <label>Dates</label>
+                            <input type="text" class="form-control date01" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+                        <div class="form-group col-1 mr-4">
+                            <label>Dates</label>
+                            <input type="text" class="form-control date01" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+                        <!-- LIST 2 IN MONTH -->
+                        <div class="form-group col-4">
+                            <div class="form-group" class="">
+                                <input type="month" class="form-control" id="date02" required />
+                                <!-- Error -->
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="form-group col-1 mr-4 ">
+                            <input type="text" class="form-control date02" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-1 mr-4">
+                            <input type="text" class="form-control date02" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-1 mr-4">
+
+                            <input type="text" class="form-control date02" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+                        <div class="form-group col-1 mr-4">
+
+                            <input type="text" class="form-control date02" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+                        <div class="form-group col-1 mr-4">
+
+                            <input type="text" class="form-control date02" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+
+                        <!-- LIST 3 MONTH -->
+                        <div class="form-group col-4">
+                            <div class="form-group" class="">
+                                <input type="month" class="form-control" id="date03" required />
+                                <!-- Error -->
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="form-group col-1 mr-4 ">
+                            <input type="text" class="form-control date03" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-1 mr-4">
+                            <input type="text" class="form-control date03" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-1 mr-4">
+
+                            <input type="text" class="form-control date03" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+                        <div class="form-group col-1 mr-4">
+
+                            <input type="text" class="form-control date03" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+                        <div class="form-group col-1 mr-4">
+
+                            <input type="text" class="form-control date03" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+                        <!-- LIST 4 MONTH -->
+                        <div class="form-group col-4">
+                            <div class="form-group" class="">
+                                <input type="month" class="form-control" id="date04" required />
+                                <!-- Error -->
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="form-group col-1 mr-4 ">
+                            <input type="text" class="form-control date04" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-1 mr-4">
+                            <input type="text" class="form-control date04" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-1 mr-4">
+
+                            <input type="text" class="form-control date04" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+                        <div class="form-group col-1 mr-4">
+
+                            <input type="text" class="form-control date04" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+                        <div class="form-group col-1 mr-4">
+
+                            <input type="text" class="form-control date04" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+                        <!-- LIST MONTH 5 -->
+                        <div class="form-group col-4">
+                            <div class="form-group" class="">
+                                <input type="month" class="form-control" id="date05" required />
+                                <!-- Error -->
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="form-group col-1 mr-4 ">
+                            <input type="text" class="form-control date05" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-1 mr-4">
+                            <input type="text" class="form-control date05" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-1 mr-4">
+
+                            <input type="text" class="form-control date05" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+                        <div class="form-group col-1 mr-4">
+
+                            <input type="text" class="form-control date05" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+                        <div class="form-group col-1 mr-4">
+
+                            <input type="text" class="form-control date05" data-error="You must have a  date." id=" "
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+                        <!-- AUTO CALCULATE BILL -->
+                        <div class="form-group col-12">
+                            <label>Select</label>
+                            <select id="hoursprice0" onchange="pay_calculator('hoursprice0','perhour0','date0','credithour0','totalhour0','hourrate0','crosspay0')" name="" data-error="You must select an option." class="form-control">
+                                <option disabled selected value="-1">option</option>
+                                <option value="400">Lab 400/Hours</option>
+                                <option  value="1500">Theory 1500/Lecture</option>
+
+                            </select>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+
+                        <!-- DIFFERENT LIST -->
+                        <div class="form-group col-2 mr-6 ">
+                        <label>Credit Hours</label>    
+                            <input type="text" class="form-control" data-error="You must have a  date." id="credithour01"
+                                placeholder="  " readonly="true">
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group col-3 mr-6 ">
+                            <label>Total working Hours</label>
+                            <input type="text" class="form-control" data-error="You must have a  date." id="totalhour01" readonly="true"
+                                placeholder="  " >
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-3 mr-6">
+                            <label>Per Hours Amount</label>
+                            <input type="text" class="form-control " data-error="You must have a date." id="perhour01" readonly="true"
+                                placeholder="  " >
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-2 mr-6">
+                            <label>Hours X Rate</label>
+                            <input type="text" class="form-control " data-error="You must have a date." id="hourrate01"
+                                placeholder="  " readonly="true">
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+                        <div class="form-group col-2 mr-20">
+                            <label>Cross Pay</label>
+                            <input type="text" class="form-control" data-error="You must have a date." id="crosspay01"
+                                placeholder="  " readonly="true">
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+
+                        <!-- LIST DIFFERENT 2 -->
+                        <div class="form-group col-2 mr-6 ">
+                              
+                                <input type="text" class="form-control" data-error="You must have a  date." id="credithour02"
+                                    placeholder="  " readonly="true">
+                                <!-- Error -->
+                                <div class="help-block with-errors"></div>
+                            </div>
+    
+                            <div class="form-group col-3 mr-6 ">
+                                
+                                <input type="text" class="form-control" data-error="You must have a  date." id="totalhour02" readonly="true"
+                                    placeholder="  " >
+                                <!-- Error -->
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group col-3 mr-6">
+                              
+                                <input type="text" class="form-control " data-error="You must have a date." id="perhour02" readonly="true"
+                                    placeholder="  " >
+                                <!-- Error -->
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group col-2 mr-6">
+                                
+                                <input type="text" class="form-control " data-error="You must have a date." id="hourrate02"
+                                    placeholder="  " readonly="true">
+                                <!-- Error -->
+                                <div class="help-block with-errors"></div>
+    
+                            </div>
+                            <div class="form-group col-2 mr-20">
+                                
+                                <input type="text" class="form-control" data-error="You must have a date." id="crosspay02"
+                                    placeholder="  " readonly="true">
+                                <!-- Error -->
+                                <div class="help-block with-errors"></div>
+    
+                            </div>
+                        <!-- LIST DIFFERENT 3 -->
+                        <div class="form-group col-2 mr-6 ">
+                              
+                            <input type="text" class="form-control" data-error="You must have a  date." id="credithour03"
+                                placeholder="  " readonly="true">
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group col-3 mr-6 ">
+                            
+                            <input type="text" class="form-control" data-error="You must have a  date." id="totalhour03" readonly="true"
+                                placeholder="  " >
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-3 mr-6">
+                          
+                            <input type="text" class="form-control " data-error="You must have a date." id="perhour03" readonly="true"
+                                placeholder="  " >
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-2 mr-6">
+                            
+                            <input type="text" class="form-control " data-error="You must have a date." id="hourrate03"
+                                placeholder="  " readonly="true">
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+                        <div class="form-group col-2 mr-20">
+                            
+                            <input type="text" class="form-control" data-error="You must have a date." id="crosspay03"
+                                placeholder="  " readonly="true">
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+                        <!-- LIST DIFFERENT 4 -->
+                        <div class="form-group col-2 mr-6 ">
+                              
+                            <input type="text" class="form-control" data-error="You must have a  date." id="credithour04"
+                                placeholder="  " readonly="true">
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group col-3 mr-6 ">
+                            
+                            <input type="text" class="form-control" data-error="You must have a  date." id="totalhour04" 
+                                placeholder="  " readonly="true">
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-3 mr-6">
+                          
+                            <input type="text" class="form-control " data-error="You must have a date." id="perhour04" readonly="true"
+                                placeholder="  " >
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-2 mr-6">
+                            
+                            <input type="text" class="form-control " data-error="You must have a date." id="hourrate04"
+                                placeholder="  " readonly="true">
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+                        <div class="form-group col-2 mr-20">
+                            
+                            <input type="text" class="form-control" data-error="You must have a date." id="crosspay04"
+                                placeholder="  " readonly="true">
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+                        <!-- LIST DIFFERENT 5 -->
+                        <div class="form-group col-2 mr-6 ">
+                              
+                            <input type="text" class="form-control" data-error="You must have a  date." id="credithour05"
+                                placeholder="  " readonly="true">
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group col-3 mr-6 ">
+                            
+                            <input type="text" class="form-control" data-error="You must have a  date." id="totalhour05" readonly="true"
+                                placeholder="  " required>
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-3 mr-6">
+                          
+                            <input type="text" class="form-control " data-error="You must have a date." id="perhour05" readonly="true"
+                                placeholder="  " >
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-2 mr-6">
+                            
+                            <input type="text" class="form-control " data-error="You must have a date." id="hourrate05"
+                                placeholder="  " readonly="true">
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+                        <div class="form-group col-2 mr-20">
+                            
+                            <input type="text" class="form-control" data-error="You must have a date." id="crosspay05"
+                                placeholder="  " readonly="true">
+                            <!-- Error -->
+                            <div class="help-block with-errors"></div>
+
+                        </div>
+                        <hr>
+                        <div class="addforms"></div>
+                        <div class="form-group col-12">
+                            <button type="button" class="btn btn-primary btn-block addbutton">Add</button>
+                        </div>
+                        <!-- <div class="form-group col-12"> -->
+                            <center><a href="file:///C:/Users/Dell/Desktop/website/FPY1/javascript/check.html" class="form-control col-12 btn-primary ">Submit Data</a></center>
+                            <!-- <input type="submit" class="form-control btn-primary" value="Send"> -->
+                        <!-- </div> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript\javascript_fun.js" ></script>
+    <script src="javascript\jquery.js"></script>
+
+</body>
+
+</html>
